@@ -1,0 +1,11 @@
+---
+  - name: Playbook
+    hosts: docker
+    become: yes
+    remote_user: admin123
+    tasks:
+      - name: download artifact from nexus 
+        get_url:
+          url: http://34.93.180.47:8081/nexus/content/repositories/kitandcat//vpro/test/23/test-23.war
+          dest: /home/admin123/project
+      
