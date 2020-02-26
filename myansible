@@ -1,6 +1,6 @@
 ---
   - name: Playbook
-    hosts: ansible
+    hosts: docker
     become: yes
     remote_user: admin123
     tasks:
